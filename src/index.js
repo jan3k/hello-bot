@@ -8,7 +8,3 @@ export default (app) => {
     );
   });
 };
-
-// uruchomienie lokalne ‑-> node src/index.js
-export const probot = new Probot({});
-export const webhooks = createNodeMiddleware(probot, { probot });
