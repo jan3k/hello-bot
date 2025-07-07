@@ -1,11 +1,11 @@
-1. Co robi hello-bot?
+# 1. Co robi hello-bot?
 Nasłuchuje zdarzenia pull_request.opened.
 
 Po otwarciu PR-a dodaje przyjazny komentarz („Dzięki za Pull Requesta! 🎉”).
     
 Wymaga tylko uprawnienia Pull requests → Read & Write – zasada najmniejszych uprawnień.
 
-2. Konfiguracja zmiennych środowiskowych
+# 2. Konfiguracja zmiennych środowiskowych
 ```
 Nazwa	Wartość
 APP_ID	numer App ID z ekranu ustawień
@@ -15,12 +15,12 @@ NODE_ENV	production
 ```
 W pliku .env.example są wszystkie klucze; skopiuj go do .env (ignorowanego przez git) i uzupełnij.
 
-3. Lokalny test
-# 1. Pobierz web-proxy do przekazywania webhooków
+# 3. Lokalny test
+Pobierz web-proxy do przekazywania webhooków
 ```
 npx smee -u https://smee.io/⟨twój-kanał⟩ -t http://localhost:3000/
 ```
-# 2. Uruchom bota
+Uruchom bota
 ```
 npm install
 npm start
